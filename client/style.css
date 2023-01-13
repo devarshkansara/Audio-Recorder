@@ -1,0 +1,12 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'montserrat', sans-serif;
+    background-image: url('2.gif');
+    background-size: cover;
+    background-position: top cover;
+}

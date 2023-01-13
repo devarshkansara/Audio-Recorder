@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<!--link rel = "stylesheet" href="style.css"!-->
+<title>Opus Recorder</title>
+<style>
+      body {
+      color: rgb(252, 114, 9);
+      text-align: center;
+      line-height: 1.8;
+}
+h1 {
+      color: rgb(6, 243, 6);
+      text-align: center;
+      line-height: 5.0;
+      font-size: 40px;
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(to right, #f32170,
+      #ffc908, #cf23cf, #eedd44);
+      -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
+        }  
+        .p {
+    color: rgb(247, 137, 2);
+    font: size 32px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+</style>
+</head>
+<body>
+<div class="wrapper">
+<header>
+<h1>Javascript Opus Recorder</h1>
+</header>
+
+  <p> make sure you enable permissions for recording audio.</p>
+  <div id='controls'>
+    <button id='start' >start</button>
+    <button id='stop' >stop</button>
+  </div>
+  <div id='options'>
+	  <div> auto-upload : <input type='checkbox' id='autoUpload' /></div>
+	  <div> upload every( in seconds): <input type='number' id='intervalTime' value='5' /></div>
+  </div>
+  <div id='downloads'>
+  </div>
+  <ul id="recordingslist"></ul>
+
+<script src="scripts/socket.io-1.2.0.js"></script>
+<script src="scripts/recorder.js"></script>
+<script src="scripts/index.js"></script>
+</body>
+</html>
